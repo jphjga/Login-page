@@ -1,0 +1,165 @@
+/* styleLogin.css */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    margin: 0;
+    padding: 0;
+}
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#switch-theme-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+    background: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 50px;
+    padding: 8px 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, border 0.2s;
+}
+
+#switch-theme-btn img {
+    width: 28px;
+    height: 28px;
+    display: block; 
+    background: none;
+}
+#login-section, #signup-modal {
+    background: #fff;
+    max-width: 350px;
+    margin: 60px auto;
+    padding: 32px 28px 24px 28px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 15px;
+    background: #f9fafb;
+    box-sizing: border-box;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px 0;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transition: background 0.2s;
+}
+
+form button[type="submit"]:hover {
+    background: #1d4ed8;
+}
+
+
+#login-section form input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+#login-section form label[for="remember"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #444;
+}
+
+#login-section form input[type="checkbox"] + label[for="remember"] {
+    margin-left: 0;
+}
+
+/* Google sign-in button */
+#login-section button[type="button"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0;
+    background: #fff;
+    color: #444;
+    border: 1px solid #d1d5db;
+    border-radius: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s;
+}
+
+#login-section button[type="button"]:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+#login-section button[type="button"] img {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    background: none;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 8px;
+    text-align: center;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#signup-section form > div {
+    margin-bottom: 16px;
+}
+#signup-section form label {
+    margin-bottom: 6px;
+    color: #555;
+}
+
